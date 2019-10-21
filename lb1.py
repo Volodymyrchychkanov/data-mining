@@ -7,7 +7,9 @@ for j in range(1, 14):
     num_score = len(scores)
     m = sum(scores) / len(scores)
     var_res = sum((xi - m) ** 2 for xi in scores) / len(scores)
-print(var_res)
+    avg_score = sum_score / num_score
+    print("dispersion(",j,") = ",var_res)
+print("AVG = ",avg_score)
 
 
 
